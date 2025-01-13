@@ -1,24 +1,21 @@
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+}
+
 .header {
-    display: flex;
     justify-content: space-between;
     /* Розподіляє елементи рівномірно */
     align-items: center;
     /* Вирівнює елементи по вертикалі */
-    padding: 24px 156px 24px 156px;
 }
 
 .header-nav,
-.header-address {
-    display: flex;
-    align-items: center;
-    /* Вирівнює дочірні елементи по центру */
-}
+.header-address {}
 
 .nav-list,
 .contact-list {
-    display: flex;
-    gap: 0px 40px;
-    /* Відстань між елементами */
     list-style: none;
 }
 
@@ -26,15 +23,19 @@
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #2E2F42;
-    line-height: 1.2;
-    letter-spacing: 3%;
+    color: #4d5ae5;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .header-logo-highlight {
-    color: #4D5AE5;
+    color: #2e2f42;
+}
+
+.header-logo:active {
+    color: #404bbf;
 }
 
 .nav-link,
@@ -53,6 +54,18 @@
     color: #2e2f42;
 }
 
+.nav-link:hover {
+    color: #404bbf;
+}
+
+.nav-link:focus {
+    color: #404bbf;
+}
+
+.header-address {
+    font-style: normal;
+}
+
 .contact-link {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -63,10 +76,17 @@
     color: #434455;
 }
 
+.contact-link:hover {
+    color: #404bbf;
+}
+
+.contact-link:focus {
+    color: #404bbf;
+}
+
 .hero {
     background: #2e2f42;
     text-align: center;
-    padding: 188px 472px 188px 472px;
 }
 
 .hero-title {
@@ -79,19 +99,37 @@
 }
 
 .hero-button {
-    width: 169px;
-    height: 56px;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #fff;
-    border-radius: 4px;
-    padding: 16px 32px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
     background: #4d5ae5;
+    cursor: pointer;
 }
 
-.advantages {
-    padding: 120px 156px 120px 156px;
+.hero-button:hover {
+    background-color: #404bbf;
+}
+
+.hero-button:focus {
+    background-color: #404bbf;
+}
+
+.advantages.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.advantages-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .advantages>.advantages-title {
@@ -99,62 +137,87 @@
 }
 
 .advantages>.advantages-list {
-    display: flex;
-    gap: 0px 40px;
     list-style-type: none;
 }
 
-.team {
-    padding: 120px 156px 120px 156px;
-    background: #f4f4fd;
-}
-
-.team>.team-title {
+.team-title {
+    background-color: #f4f4fd;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
 
-.team>.team-list {
-    display: flex;
-    gap: 0px 40px;
-    list-style-type: none;
-    margin-top: 72px;
+.team-member {
+    background-color: #ffffff;
 }
 
-.portfolio {
-    padding: 120px 156px 120px 156px;
+.team-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
-.portfolio>.portfolio-title {
+.team-role {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.portfolio-title {
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.portfolio-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.portfolio-type {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
 }
 
 .portfolio>.portfolio-list {
-    display: flex;
-    gap: 0px 40px;
     list-style-type: none;
     margin-top: 72px;
 }
 
 .footer {
-    background: #2e2f42;
-    padding: 100px 1020px 100px 156px;
+    background-color: #2e2f42;
 }
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    color: #f4f4fd;
-    line-height: 1.2;
-    letter-spacing: 3%;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 .footer-logo-highlight {
-    color: #4d5ae5;
+    color: #f4f4fd;
 }
 
 .footer-text {
+    line-height: 1.5;
     color: #f4f4fd;
+    letter-spacing: 0.02em;
 }
